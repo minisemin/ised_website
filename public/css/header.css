@@ -1,0 +1,72 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 10px 0px #00000014;
+  padding: 0 56px 0 56px;
+  height: 80px;
+}
+
+#header-left-container > div{
+  gap: 1rem;
+  font-family: YonseiBold; /*font not available?*/
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #686666;
+}
+
+/* hide the second div of the header-left-container */
+#header-left-container > div:nth-child(2) {
+  display: none;
+}
+
+#header-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#header-menu > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#header-menu > ul > li {
+  /* center the text inside the li */
+  padding: 25px 0 0 0;
+}
+
+#header-menu > ul > li > a{
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.019em;
+  text-align: justified;
+  color: black;
+}
+
+@media (max-width: 1070px) {
+  #header-menu {
+    display: none;
+  }
+}
+
+/* Mobile view: hide the first div of the header-left-container */
+@media (max-width: 500px) {
+  #header-left-container > div:first-child {
+    display: none;
+  }
+  #header-left-container > div:nth-child(2) {
+    display: block;
+  }
+  #header-left-container img {
+    width: 160px;
+  }
+}

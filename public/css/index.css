@@ -1,0 +1,70 @@
+h3 {
+  font-family: Pretendard;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: white;
+}
+
+h1 {
+  font-family: Pretendard;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: white;
+}
+
+#white-gradient-cover {
+  position: absolute;
+  top: 850px;
+  height: 64px;
+  width: 1366px;
+  background-color: white;
+  box-shadow: 0px 0px 20px 20px white;
+  z-index: 1;
+}
+
+#top-blue-container {
+  background-color: #003377;
+  width: 494px;
+  height: 266px;
+  position: absolute;
+  top: 135px;
+  left: 136px;
+  z-index: 2;
+  padding: 40px;
+}
+
+#top-blue-container > a {
+  color: white;
+  text-decoration: underline;
+}
+
+#title-section > h2 {
+  width: 347px;
+  height: 35px;
+  position: absolute;
+  top: 481px;
+  left: 235px;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #003377;
+}
+
+#bottom-blue-container {
+  position: absolute;
+  width: 534px;
+  height: 627px;
+  top: 556px;
+  left: 136px;
+  background-color: #003377;
+  z-index: 2;
+}

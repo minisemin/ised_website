@@ -1,0 +1,60 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@font-face {
+  font-family: YonseiBold;
+  src: url("/font/YonseiBold.ttf");
+}
+
+body {
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.019em;
+  margin: 0;
+  background-color: #ffffff;
+  background-image: url("img/background.png");
+  background-repeat: no-repeat;
+  background-position: 0 80px;
+  background-position-x: center;
+  background-size: 1366px;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+
+.yonsei-logo {
+  width:146px;
+}
+
+.vertical-line {
+  border-left: 1px solid #686666;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-line {
+  border: 2px solid #000000;
+  border-radius: 50em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-button {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+}
