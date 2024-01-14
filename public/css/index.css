@@ -1,3 +1,8 @@
+/* Sets the page height */
+body {
+  height: 5205px;
+}
+
 h3 {
   font-family: Pretendard;
   font-size: 24px;
@@ -18,53 +23,124 @@ h1 {
   color: white;
 }
 
+
+#background-img {
+  position: absolute;
+  height: 802px;
+  left: 50%;
+  transform: translate(-50%,0);
+  top: 80px;
+  z-index: -2;
+}
+
 #white-gradient-cover {
   position: absolute;
   top: 850px;
-  height: 64px;
-  width: 1366px;
+  left: 0px;
+  height: 80px;
+  width: 100%;
   background-color: white;
   box-shadow: 0px 0px 20px 20px white;
-  z-index: 1;
+  z-index: -1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 534px 1fr;
+  height: 100%;
+  padding: 60px 136px 0 136px;
+  z-index: 2;
 }
 
 #top-blue-container {
   background-color: #003377;
-  width: 494px;
-  height: 266px;
-  position: absolute;
-  top: 135px;
-  left: 136px;
-  z-index: 2;
-  padding: 40px;
+  height: 306px;
 }
 
-#top-blue-container > a {
+.padding-inside-blue-container {
+  padding: 2% 0 0 7%;
+}
+
+#top-blue-container a {
   color: white;
   text-decoration: underline;
+  margin: 35px 0 35px 0;
 }
 
-#title-section > h2 {
-  width: 347px;
+#title-section > h2 { /* '연세대학교 혁신과학공학과' */
   height: 35px;
-  position: absolute;
-  top: 481px;
-  left: 235px;
   font-family: Pretendard;
   font-size: 30px;
   font-weight: 900;
   line-height: 35px;
   letter-spacing: 0.02em;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   color: #003377;
+  margin: 40px 0 40px 0;
 }
 
 #bottom-blue-container {
-  position: absolute;
-  width: 534px;
   height: 627px;
-  top: 556px;
-  left: 136px;
   background-color: #003377;
-  z-index: 2;
+  color: white;
+  gap: 20px;
+}
+
+#bottom-blue-container button { /*Apply button*/
+  border: 1px solid white;
+  background-color: #003377;
+  color: white;
+  width: 187px;
+  height: 44px;
+  margin-top: 3%;
+}
+
+#bottom-blue-container img {
+  height: 92px;
+  width: 58px;
+  margin: 3%;
+}
+
+#bottom-blue-container h2 {
+  margin-top: 40%;
+}
+
+#majors-section {
+  position: fixed;
+  width: 645px;
+  height: 62px;
+  top: 1265px;
+  left: 163px;
+  background-color: white;
+}
+
+#footer-container {
+  position: absolute;
+  top: 4900px;
+}
+
+
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 15% 0 15%;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  #title-section > h2 {
+    font-size: 5vw;
+  }
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  #top-blue-container {
+    height: 300px;
+  }
 }
