@@ -33,6 +33,7 @@ h1 {
   z-index: -2;
 }
 
+/* Extpand background image when screen is bigger*/
 @media (min-width: 1367px) {
   #background-img {
     width: 100%;
