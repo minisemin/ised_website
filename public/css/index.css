@@ -55,7 +55,7 @@ h1 {
 main {
   display: grid;
   grid-template-columns: 534px 1fr;
-  grid-template-rows: 1100px 500px 300px 300px 300px;
+  grid-template-rows: 1100px 400px 322px 300px 300px;
   height: 100%;
   padding: 60px 136px 0 136px;
   z-index: 2;
@@ -136,6 +136,37 @@ main {
   max-width: 1000px;
 }
 
+#research-highlights-blue-container {
+  background-color: #003377;
+  height: 323px;
+  color: white;
+}
+
+#research-highlights-blue-container * {
+  padding-left: 1.875em;
+  position: relative;
+  top: 70%;
+}
+
+#research-highlights-blue-container + a {
+  position: relative;
+  top: 75%;
+  left: min(90%, 325px);
+}
+
+#research-highlights-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1.875em;
+  width: 100%;
+  height: 100%;
+}
+
+.research-card h3 {
+  color: black;
+}
+
 #footer-container {
   position: absolute;
   top: 4900px;
@@ -178,12 +209,9 @@ main {
     padding-bottom: 20px;
   }
 
-  #top-blue-container h1 {
-    text-align: center;
-  }
-
   #majors-section li {
     font-size: 5vw;
+    text-align: left;
   }
 
   #majors-section ul {
@@ -192,6 +220,10 @@ main {
 
   .h-arrow {
     width: 4em;
+  }
+
+  #research-highlights-blue-container * {
+    padding-left: 0;
   }
 }
 
