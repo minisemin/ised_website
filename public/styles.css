@@ -50,6 +50,9 @@ body {
   align-items: center;
 }
 
+.h-arrow {
+  width: 64px;
+}
 
 .menu-button {
   width: 30px;

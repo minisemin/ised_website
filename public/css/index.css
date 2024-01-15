@@ -55,6 +55,7 @@ h1 {
 main {
   display: grid;
   grid-template-columns: 534px 1fr;
+  grid-template-rows: 1100px 500px 300px 300px 300px;
   height: 100%;
   padding: 60px 136px 0 136px;
   z-index: 2;
@@ -74,13 +75,13 @@ main {
 }
 
 #title-section > h2 { /* '연세대학교 혁신과학공학과' */
-  height: 35px;
   font-family: Pretendard;
   font-size: 30px;
   font-weight: 900;
   line-height: 35px;
   letter-spacing: 0.02em;
   width: 100%;
+  height: auto;
   text-align: center;
   color: #003377;
   margin: 1em 0 1em 0;
@@ -113,12 +114,26 @@ main {
 }
 
 #majors-section {
-  position: fixed;
-  width: 645px;
-  height: 62px;
-  top: 1265px;
-  left: 163px;
   background-color: white;
+  width: 110%;
+  grid-column: auto / span 2;
+  margin-left: -5%;
+}
+
+#majors-section ul {
+  grid-template-columns: 1fr;
+}
+
+#majors-section li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: space-between;
+  font-size: 3em;
+  font-weight: 700;
+  width: 100%;
+  max-width: 1000px;
 }
 
 #footer-container {
@@ -165,6 +180,18 @@ main {
 
   #top-blue-container h1 {
     text-align: center;
+  }
+
+  #majors-section li {
+    font-size: 5vw;
+  }
+
+  #majors-section ul {
+    grid-gap: 1.875em;
+  }
+
+  .h-arrow {
+    width: 4em;
   }
 }
 
