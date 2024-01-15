@@ -55,7 +55,7 @@ h1 {
 main {
   display: grid;
   grid-template-columns: 534px 1fr;
-  grid-template-rows: 1100px 400px 322px 300px 300px;
+  grid-template-rows: 1100px 400px 322px 200px 300px;
   height: 100%;
   padding: 60px 136px 0 136px;
   z-index: 2;
@@ -85,6 +85,7 @@ main {
   text-align: center;
   color: #003377;
   margin: 1em 0 1em 0;
+  text-shadow: white 20px 0 10px;
 }
 
 #bottom-blue-container {
@@ -100,7 +101,7 @@ main {
   color: white;
   width: 13em;
   height: 44px;
-  margin-top: 3%;
+  margin-top: max(3%, 40px);
 }
 
 #bottom-blue-container img {
@@ -155,12 +156,18 @@ main {
 }
 
 #research-highlights-section {
+  grid-column: auto / span 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 1.875em;
-  width: 100%;
+  width: 110%;
   height: 100%;
+  margin-left: -5%;
+}
+
+#research-highlights-section img {
+  width: 100%;
 }
 
 .research-card h3 {
