@@ -208,10 +208,37 @@ hr {
 .img-card {
   height: 376px;
   width: 534px;
+  position: relative;
+}
+
+.img-card img {
+  width: 100%;
 }
 
 #img-card-1 {
-  background-image: url("./img/img_card_1.png");
+  margin-bottom: 1em;
+}
+
+.img-card div {
+  position: absolute;
+  top: 2.5em;
+  left: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+#img-card-1 div a {
+  color: white;
+  text-decoration: underline;
+}
+
+#img-card-1 div p {
+  margin: 0 0 2.5em 0;
+}
+
+#img-card-2 {
+  margin-top: 1em;
 }
 
 #footer-container {
