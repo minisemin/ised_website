@@ -55,7 +55,7 @@ h1 {
 main {
   display: grid;
   grid-template-columns: 534px 1fr;
-  grid-template-rows: 1100px 400px 322px 200px 300px;
+  grid-template-rows: 1100px 400px 322px 550px 500px 300px;
   height: 100%;
   padding: 60px 136px 0 136px;
   z-index: 2;
@@ -174,9 +174,49 @@ main {
   color: black;
 }
 
+#news-events-section {
+  grid-column: auto / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  color: white;
+}
+
+hr {
+  color: white;
+  width: 75%;
+  border: 1px solid white;
+}
+
+.ne-container {
+  background-color: #003377;
+  height: 628px;
+  width: 534px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ne-date {
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 1.125em;
+}
+
+.img-card {
+  height: 376px;
+  width: 534px;
+}
+
+#img-card-1 {
+  background-image: url("./img/img_card_1.png");
+}
+
 #footer-container {
   position: absolute;
-  top: 4900px;
+  top: 4800px;
 }
 
 @media (min-width: 751px) {
@@ -185,6 +225,15 @@ main {
   }
 }
 
+/* Adjust the columns of news & events section */
+@media (max-width: 1245px) {
+  #news-events-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Overall adjustment */
 @media (max-width: 750px) {
   main {
     display: flex;
