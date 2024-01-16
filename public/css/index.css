@@ -4,22 +4,17 @@ body {
 }
 
 h3 {
-  font-family: Pretendard;
   font-size: 24px;
-  font-weight: 500;
   line-height: 26px;
   letter-spacing: -0.02em;
-  text-align: left;
   color: white;
 }
 
 h1 {
-  font-family: Pretendard;
   font-size: 48px;
   font-weight: 700;
   line-height: 53px;
   letter-spacing: -0.02em;
-  text-align: left;
   color: white;
 }
 
@@ -31,6 +26,8 @@ h1 {
   transform: translate(-50%,0);
   top: 80px;
   z-index: -2;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 /* Extpand background image when screen is bigger*/
@@ -84,7 +81,7 @@ main {
   height: auto;
   text-align: center;
   color: #003377;
-  margin: 1em 0 1em 0;
+  margin: 2em 0 2em 0;
   text-shadow: white 20px 0 10px;
 }
 
@@ -101,7 +98,7 @@ main {
   color: white;
   width: 13em;
   height: 44px;
-  margin-top: max(3%, 40px);
+  margin-top:80px;
 }
 
 #bottom-blue-container img {
@@ -116,9 +113,8 @@ main {
 
 #majors-section {
   background-color: white;
-  width: 110%;
+  width: 100%;
   grid-column: auto / span 2;
-  margin-left: -5%;
 }
 
 #majors-section ul {
@@ -131,15 +127,15 @@ main {
   align-items: center;
   gap: 0.5em;
   justify-content: space-between;
-  font-size: 3em;
+  font-size: 2.7em;
   font-weight: 700;
   width: 100%;
-  max-width: 1000px;
+  /* max-width: 1000px; */
 }
 
 #research-highlights-blue-container {
   background-color: #003377;
-  height: 323px;
+  height: 323px !important;
   color: white;
 }
 
@@ -152,7 +148,7 @@ main {
 #research-highlights-blue-container + a {
   position: relative;
   top: 75%;
-  left: min(90%, 325px);
+  justify-self: end;
 }
 
 #research-highlights-section {
@@ -161,9 +157,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 1.875em;
-  width: 110%;
   height: 100%;
-  margin-left: -5%;
 }
 
 #research-highlights-section img {
@@ -243,7 +237,7 @@ hr {
 
 #footer-container {
   position: absolute;
-  top: 4800px;
+  top: 4700px;
 }
 
 @media (min-width: 751px) {
@@ -261,7 +255,7 @@ hr {
 }
 
 /* Overall adjustment */
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   main {
     display: flex;
     flex-direction: column;
@@ -270,6 +264,10 @@ hr {
 
   h1 {
     font-size: 7vw;
+  }
+
+  h2 {
+    font-size: 4vw;
   }
 
   a {
@@ -292,6 +290,11 @@ hr {
     padding-bottom: 20px;
   }
 
+  #majors-section, #research-highlights-section {
+    width: 110% !important;
+    margin-left: -5%;
+  }
+
   #majors-section li {
     font-size: 5vw;
     text-align: left;
@@ -305,9 +308,24 @@ hr {
     width: 4em;
   }
 
+  /* Hide the blue arrow and show the white arrow */
+  #research-highlights-blue-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+
   #research-highlights-blue-container * {
     padding-left: 0;
+    paddding-bottom: 10px;
+    position: static;
   }
+
+  #research-highlights-blue-container + a {
+    display: none;
+  }
+
 }
 
 @media (max-width: 340px) {

@@ -66,9 +66,7 @@ body {
 }
 
 #footer-container{
-  /* place it at the bottom of the page */
-  position: absolute;
-  bottom: 0;
+  margin: 5rem 0 10rem 0;
   width: 100%;
 }
 

@@ -2,13 +2,6 @@
 
 (function() {
 
-  const HOME = "/";
-  const ABOUT = "/about";
-  const PEOPLE = "/people";
-  const RESEARCH = "/research";
-  const ACADEMICS = "/academics";
-  const NEWS = "/news"; // News and Notice
-
   window.addEventListener("load", init);
 
   /**
@@ -26,7 +19,7 @@
    */
   function getHeader() {
     let header = document.getElementById("header-container");
-    fetch("./components/header.html")
+    fetch("/components/header.html")
       .then((response) => response.text())
       .then((html) => {
         let parser = new DOMParser();
@@ -42,7 +35,7 @@
    */
   function getFooter() {
     let footer = document.getElementById("footer-container");
-    fetch("./components/footer.html")
+    fetch("/components/footer.html")
       .then((response) => response.text())
       .then((html) => {
         let parser = new DOMParser();
