@@ -1,0 +1,75 @@
+.member-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px 30px 80px;
+}
+
+.member-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 203px;
+}
+
+.member-card div {
+  height: 203px;
+}
+
+.member-card h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.member-card h4 {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #686666;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.member-card img {
+  height: 203px;
+  width: 154px;
+  object-fit: cover;
+}
+
+.member-card a {
+  text-decoration: underline;
+}
+
+.member-card p {
+  color: #686666;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin: 7px 0 7px 0;
+}
+
+.member-card span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-card span img {
+  width: 27px;
+  height: 16px;
+}

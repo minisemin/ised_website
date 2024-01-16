@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Stylesheets for each stuff in the page -->
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/information_pages.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/people.css">
     <script type="module" src="/script/load_header_footer.js"></script>
   </head>
   <body>
@@ -16,6 +18,38 @@
     <div id="header-container"></div>
     <!-- Main content of the homepage-->
     <main>
+      <div class="toggle-menu">
+        <a href="/pages/people/Faculty.html">Faculty</a>
+        <a class="selected" href="/pages/people/staff.html">Staff</a>
+      </div>
+      <div class="title-blue-box">
+        <div>
+          <h1>Staff</h1>
+        </div>
+        <div>
+          <h3>People</h3>
+        </div>
+      </div>
+      <section class="member-container">
+        <div class="member-card">
+          <svg width="154" height="203" viewBox="0 0 154 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="154" height="203" fill="#E2E2E2"/>
+            </svg>
+          <!-- <img src="/img/faculty/hansung_kim.jpg" alt="Hansung Kim"> 이미지를 여기에 추가해 주세요 -->
+          <div>
+            <h3>Gildong Hong</h3>
+            <h4>Staff</h4>
+            <a href="mailto:example.yonsei.ac.kr">example@yonsei.ac.kr</a>
+            <p>010)1234-5678</p>
+            <p>Veritas #</p>
+            <span>
+              <a href="">more information</a>
+              <img src="/img/horizontal_arrow.png" alt="horizontal arrow">
+            </span>
+          </div>
+        </div>
+        </div>
+      </section>
     </main>
     <!-- Footer fetched from footer.html -->
     <div id="footer-container"></div>

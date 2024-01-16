@@ -1,0 +1,44 @@
+
+th {
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  color: #003377;
+  padding: 1em 1em 1em 1em;
+}
+
+tr {
+  border-bottom: 1pt solid #003377;
+}
+
+td {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+  padding: 1em 1em 1em 1em;
+}
+
+tr td:nth-child(1), tr td:nth-child(4) { /* I don't think they are 0 based */
+  text-align: center;
+}
+
+.paragraphs h3 {
+  font-size: 1.25em;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #686666;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}

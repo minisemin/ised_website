@@ -65,6 +65,14 @@ body {
   border: none;
 }
 
+.two-two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
 #footer-container{
   margin: 5rem 0 10rem 0;
   width: 100%;
