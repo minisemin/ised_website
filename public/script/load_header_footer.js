@@ -27,6 +27,15 @@
         Array.from(doc.body.childNodes).forEach(node => {
           header.appendChild(node);
         });
+      })
+      .then(() => {
+        /* Activate mobile navigation button */
+        let mobileNav = document.getElementById("mobile-nav");
+        let mobileNavButton = document.getElementById("mobile-navbton");
+        mobileNavButton.addEventListener("click", () => {
+          mobileNav.classList.toggle("flex");
+          mobileNavButton.classList.toggle("hidden");
+        });
       });
   }
 

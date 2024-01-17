@@ -7,7 +7,7 @@ header {
   height: 80px;
 }
 
-#header-left-container > div{
+#header-left-container > div {
   gap: 1rem;
   font-family: YonseiBold; /*font not available?*/
   font-size: 14px;
@@ -39,22 +39,112 @@ header {
 
 #header-menu > ul > li {
   /* center the text inside the li */
-  padding: 25px 0 0 0;
+  padding: 3px 0 0 0;
 }
 
-#header-menu > ul > li > a{
-  font-family: Pretendard;
+#header-menu > ul > li > a {
   font-size: 20px;
-  font-weight: 500;
   line-height: 30px;
   letter-spacing: -0.019em;
   text-align: justified;
   color: black;
 }
 
+/* Dropdown menu */
+
+.dropdown-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  height: 80px;
+}
+
+.dropdown-menu {
+  display: none;
+  background-color: #686666;
+  /* display: flex;  <== activated on mouse hover */
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 80px;
+  margin-left: -10px;
+  padding: 10px;
+}
+
+.dropdown-menu a {
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+li:hover .dropdown-menu {
+  display: flex;
+}
+
+button:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a:hover {background-color: #36454F;}
+
+/* Mobile Menu */
+
+#mobile-navbton {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+}
+
+#mobile-nav {
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 0 135px 0 136px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+
+#mobile-nav > ul > li > a {
+  font-size: 1.5em;
+  color: white;
+  background-color: #003377;
+  width: 320px;
+  padding: 30px 0 30px 30px;
+}
+
+#mobile-nav > ul > li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+}
+
 @media (max-width: 1070px) {
   #header-menu {
     display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #mobile-nav {
+    padding: 0 20px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  #mobile-nav > ul > li > a {
+    width: 100%;
   }
 }
 
@@ -68,5 +158,8 @@ header {
   }
   #header-left-container img {
     width: 160px;
+  }
+  #mobile-nav > ul > li > div > a {
+    font-size: 0.8em;
   }
 }

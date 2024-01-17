@@ -13,10 +13,6 @@ body {
   background-color: #ffffff;
 }
 
-.hidden {
-  display: none;
-}
-
 .flex-left {
   display: flex;
   justify-content: flex-start;
@@ -54,17 +50,6 @@ body {
   width: 64px;
 }
 
-.menu-button {
-  width: 30px;
-  height: 30px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: transparent;
-  border: none;
-}
-
 .two-two-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -83,4 +68,14 @@ body {
   body {
     text-align: center;
   }
+}
+
+/* Display Settings */
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
 }
