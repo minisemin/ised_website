@@ -190,6 +190,18 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.ne-container img {
+  width: 64px;
+}
+
+.ne-container a {
+  margin-top: 2em;
+  position: absolute;
+  top: 85%;
+  left: 80%;
 }
 
 .ne-date {
@@ -238,12 +250,11 @@ hr {
 #img-card-2 div {
   flex-direction: row;
   align-items: flex-end;
-  height: 70%;
-  width: 75%;
+  height: 85%;
+  width: 85%;
 }
 
 #img-card-2 a img {
-  height: 23px;
   width: 64px;
   position: relative;
   top: 100%;
