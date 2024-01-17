@@ -283,6 +283,7 @@ hr {
 
 #others-section span a {
   color: white;
+  text-align: center;
 }
 
 #others-section svg {
@@ -321,7 +322,7 @@ hr {
   }
 
   a {
-    font-size: 3vw;
+    font-size: 1em;
   }
 
   #title-section > h2 {
