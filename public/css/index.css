@@ -1,8 +1,3 @@
-/* Sets the page height */
-body {
-  height: 5205px;
-}
-
 h3 {
   font-size: 24px;
   line-height: 26px;
@@ -17,7 +12,6 @@ h1 {
   letter-spacing: -0.02em;
   color: white;
 }
-
 
 #background-img {
   position: absolute;
@@ -52,7 +46,8 @@ h1 {
 main {
   display: grid;
   grid-template-columns: 534px 1fr;
-  grid-template-rows: 1100px 400px 322px 550px 500px 300px;
+  grid-template-rows: max-content max-content max-content max-content max-content 1fr;
+  gap: 2em;
   height: 100%;
   padding: 60px 136px 0 136px;
   z-index: 2;
@@ -60,7 +55,7 @@ main {
 
 #top-blue-container {
   background-color: #003377;
-  height: 306px;
+  height: 320px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
@@ -86,10 +81,11 @@ main {
 }
 
 #bottom-blue-container {
-  height: 627px;
+  height: 640px;
   background-color: #003377;
   color: white;
   gap: 20px;
+  position: relative;
 }
 
 #bottom-blue-container button { /*Apply button*/
@@ -98,17 +94,20 @@ main {
   color: white;
   width: 13em;
   height: 44px;
-  margin-top:80px;
+  position: absolute;
+  top: 20%;
 }
 
 #bottom-blue-container img {
   height: 92px;
   width: 58px;
-  margin: 5vw;
+  position: absolute;
+  top: 35%;
 }
 
 #bottom-blue-container h2 {
-  margin-top: 40%;
+  position: absolute;
+  top: 80%;
 }
 
 #majors-section {
@@ -119,6 +118,8 @@ main {
 
 #majors-section ul {
   grid-template-columns: 1fr;
+  Height: 90%;
+  align-items: center;
 }
 
 #majors-section li {
@@ -135,7 +136,7 @@ main {
 
 #research-highlights-blue-container {
   background-color: #003377;
-  height: 323px !important;
+  height: 323px;
   color: white;
 }
 
@@ -157,7 +158,7 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 1.875em;
-  height: 100%;
+  margin-top: -2em;
 }
 
 #research-highlights-section img {
@@ -171,22 +172,20 @@ main {
 #news-events-section {
   grid-column: auto / span 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1em;
+  grid-template-columns: 534px 534px;
+  gap: 2em;
   color: white;
 }
 
 hr {
   color: white;
-  width: 75%;
+  width: 80%;
   border: 1px solid white;
 }
 
 .ne-container {
   background-color: #003377;
   height: 628px;
-  width: 534px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,17 +199,7 @@ hr {
 }
 
 .img-card {
-  height: 376px;
-  width: 534px;
   position: relative;
-}
-
-.img-card img {
-  width: 100%;
-}
-
-#img-card-1 {
-  margin-bottom: 1em;
 }
 
 .img-card div {
@@ -219,7 +208,22 @@ hr {
   left: 2em;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  justify-content: space-between;
+}
+
+.img-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#img-card-1 {
+  margin-bottom: 2em;
+}
+
+#img-card-1 div {
+  top: 50%;
+  left: 25%;
+  transform: translate(-25%,-50%);
 }
 
 #img-card-1 div a {
@@ -227,17 +231,51 @@ hr {
   text-decoration: underline;
 }
 
-#img-card-1 div p {
-  margin: 0 0 2.5em 0;
-}
-
 #img-card-2 {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
-#footer-container {
-  position: absolute;
-  top: 4700px;
+#img-card-2 div {
+  flex-direction: row;
+  align-items: flex-end;
+  height: 70%;
+  width: 75%;
+}
+
+#img-card-2 a img {
+  height: 23px;
+  width: 64px;
+  position: relative;
+  top: 100%;
+}
+
+#others-section {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2em 0 2em 0;
+  gap: 1.875em;
+}
+
+#others-section span {
+  background-color: #003377;
+  height: 186px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#others-section span:last-child { /* White background for 'ise' */
+  background-color: white;
+}
+
+#others-section span a {
+  color: white;
+}
+
+#others-section svg {
+  width: 100%;
 }
 
 @media (min-width: 751px) {
@@ -251,6 +289,7 @@ hr {
   #news-events-section {
     display: flex;
     flex-direction: column;
+    grid-column: auto / span 1;
   }
 }
 
@@ -314,16 +353,26 @@ hr {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-end;
+    min-height: 230px;
+    position: relative;
+    padding-bottom: 20px;
   }
 
   #research-highlights-blue-container * {
     padding-left: 0;
-    paddding-bottom: 10px;
     position: static;
   }
 
   #research-highlights-blue-container + a {
-    display: none;
+    display: none;   /* Hide the blue arrow outside the box and show the white one */
+  }
+
+  .img-card, #img-card-2, #img-card-1, #news-container div, #notice-container div {
+    text-align: left;
+  }
+
+  #news-container div, #notice-container div {
+    width: 80%;
   }
 
 }
