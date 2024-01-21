@@ -19,7 +19,7 @@
    */
   function getHeader() {
     let header = document.getElementById("header-container");
-    fetch("/public/components/header.html")
+    fetch("/components/header.html")
       .then((response) => response.text())
       .then((html) => {
         let parser = new DOMParser();
@@ -44,7 +44,7 @@
    */
   function getFooter() {
     let footer = document.getElementById("footer-container");
-    fetch("/public/components/footer.html")
+    fetch("/components/footer.html")
       .then((response) => response.text())
       .then((html) => {
         let parser = new DOMParser();

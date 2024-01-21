@@ -171,7 +171,7 @@ tr td:nth-child(4) { /* I don't think they are 0 based */
 
 @media (max-width: 800px) {
   main {
-    padding: 60px 5% 0 5%;
+    padding: 0px 5% 0 5%;
   }
 
   .title-blue-box {

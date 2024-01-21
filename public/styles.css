@@ -73,7 +73,7 @@ body {
 /* Display Settings */
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .flex {

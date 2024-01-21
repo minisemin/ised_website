@@ -20,7 +20,7 @@ ul {
   padding-left: 0;
 }
 
-li {
+#footer-container li {
   display: grid;
   padding-bottom: 10px;
 }
