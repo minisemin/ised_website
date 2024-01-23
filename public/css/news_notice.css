@@ -76,6 +76,8 @@ hr {
 #prev-title, #next-title {
   margin-left: 30px;
   color: #686666;
+  text-overflow: ellipsis;
+  text-align: left;
 }
 
 @media (max-width: 800px) {
@@ -93,7 +95,6 @@ hr {
   }
 
   #bottom-back-btn {
-    display: block;
     padding: 30px;
     height: 40px;
     width: 65px;

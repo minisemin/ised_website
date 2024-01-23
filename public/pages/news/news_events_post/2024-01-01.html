@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/news_notice.css">
     <script type="module" src="/script/load_header_footer.js"></script>
-    <script type="module" src="/script/load_news_events.js"></script>
+    <script type="module" src="/script/load_post.js"></script>
   </head>
   <body>
     <!-- Header fetched from header.html -->
@@ -33,13 +33,7 @@
         </div>
       </div>
       <section class="contents">
-        <section>
-          <table id="table-of-contents">
-          </table>
-          <div class="pages-bar"></div>
-          <div class="search-bar"></div>
-        </section>
-        <section id="opened-content-container" class="hidden">
+        <section id="opened-content-container">
           <div>
             <img id="top-back-btn" src="/img/backward_blue_arrow.png" alt="backward arrow" id="backward-arrow">
             <div id="opened-content">
@@ -88,7 +82,6 @@
                 <p>Please feel free to contact uic_students@yonsei.ac.kr if you have any questions.</p>
               </div>
             </div>
-            <img id="bottom-back-btn" class="hidden" src="/img/backward_blue_arrow.png" alt="backward arrow" id="backward-arrow">
           </div>
           <hr>
           <div id="prev-next">
@@ -103,6 +96,7 @@
               <p id="next-title"></p>
             </span>
           </div>
+          <img id="bottom-back-btn" class="hidden" src="/img/backward_blue_arrow.png" alt="backward arrow" id="backward-arrow">
         </section>
       </section>
     </main>
